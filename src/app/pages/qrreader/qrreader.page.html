@@ -1,0 +1,76 @@
+
+<ion-header  >
+  <div class="banner-img"></div>
+  <ion-toolbar >
+  <br>
+  <ion-title #titulo >Sistema de Asistencia DUOC</ion-title>
+  <br>
+  </ion-toolbar>
+</ion-header>   
+
+<ion-content [fullscreen]="true"
+[style.--background]="escaneando?'#00000000':'#ffffff'">
+<div class="btnpadding">
+<ion-button class="scan-button2" expand="full" (click)="comenzarEscaneo()" [hidden]="escaneando">
+  Escanear código QR
+</ion-button>
+
+<ion-button class="scan-button2" expand="full" (click)="detenerEscaneo()" [hidden]="!escaneando">
+  Detener escaneo de código QR
+</ion-button>
+</div> 
+
+<div class="scan-box" [hidden]="!escaneando"></div>
+
+<ion-card *ngIf="resultado">
+<ion-card-header>
+  <ion-card-title>Código QR</ion-card-title>
+</ion-card-header>
+<ion-card-content>
+  <br>
+  <table>
+    <tr>
+      <td class="ancho_columna_titulos">Bloque de Inicio</td>
+      <td>{{resultado.bloqueInicio}}</td>
+    <tr>
+    <tr>
+      <td>Bloque de Termino</td>
+      <td>{{resultado.bloqueTermino}}</td>
+    <tr>
+    <tr>
+      <td>Dia</td>
+      <td>{{resultado.dia}}</td>
+    <tr>
+    <tr>
+      <td>Hora de Fin</td>
+      <td>{{resultado.horaFin}}</td>
+    <tr>
+    <tr>
+      <td>Hora de Inicio</td>
+      <td>{{resultado.horaInicio}}</td>
+    <tr>
+    <tr>
+      <td>Sigla</td>
+      <td>{{resultado.idAsignatura}}</td>
+    <tr>
+    <tr>
+      <td>Nombre de Asignatura</td>
+      <td>{{resultado.nombreAsignatura}}</td>
+    <tr>
+    <tr>
+      <td>Nombre del Profesor</td>
+      <td>{{resultado.nombreProfesor}}</td>
+    <tr>
+    <tr>
+      <td>Seccion</td>
+      <td>{{resultado.seccion}}</td>
+    <tr>
+    <tr>
+      <td>Sede</td>
+      <td>{{resultado.sede}}</td>
+    <tr>
+  </table>
+  <br>
+</ion-card-content>
+</ion-card>
+</ion-content>

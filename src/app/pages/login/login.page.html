@@ -1,0 +1,34 @@
+<ion-title class="ion-padding-top ion-text-center">
+  <ion-label>
+    <div class="banner-img"></div>
+    <h1>Sistema de Asistencia</h1>
+  </ion-label>
+</ion-title>
+
+<ion-content>
+  <div class="ion-padding-vertical">
+    <ion-card class="ion-text-center">
+      <ion-card-title class="ion-text-center">
+        <ion-label>
+          <h1 style="padding-top: 15px;">¡Bienvenido!</h1>
+        </ion-label>
+      </ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Correo</ion-label>
+          <ion-input type="text" [(ngModel)]="correo"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      </ion-card-content>
+      <div class="btnpadding">
+      <ion-button shape="block" (click)="ingresar()">Ingresar</ion-button>
+      <ion-button shape="block" (click)="registrar()">Registrarse</ion-button>
+      <ion-button shape="block" (click)="recuperar()">Olvide mi contraseña</ion-button>
+      <ion-button shape="block" (click)="gestUsuarios()">Gestor de usuarios</ion-button>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

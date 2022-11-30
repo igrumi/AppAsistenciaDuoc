@@ -1,0 +1,33 @@
+<ion-title class="ion-padding-top ion-text-center">
+  <ion-label>
+    <div class="banner-img"></div>
+    <h1>Sistema de Asistencia</h1>
+  </ion-label>
+</ion-title>
+
+<ion-content>
+  <ion-card>
+    <br>
+    <div id="titulo1">
+      <ion-card-subtitle>Recuperar contraseña</ion-card-subtitle>
+      </div>
+      <br>
+      <div id="titulo2">
+      <ion-card-subtitle>Paso 1: Ingresa tu correo</ion-card-subtitle>
+      </div>
+    <br>
+    <br>
+    <ion-input type="text" [(ngModel)]="correo" placeholder="Ingresa tu correo"></ion-input><br>
+    <br>
+    <br>
+    <ion-button shape="block" (click)="ingresarPaginaValidarRespuestaSecreta()">Recuperar contraseña</ion-button>
+    <br>
+    <div style="padding-bottom: 10px;" id="iniciar">
+      <a href="">Iniciar Sesion</a>
+      </div>
+  </ion-card>
+  <br>
+
+</ion-content>
+
+

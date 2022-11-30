@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Asistencia DUOC</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>
+      Registro de usuario
+      <br>
+      <span class="cantidad-usuarios" *ngIf="cantidad === 0">
+        No existen usuarios en la base de datos
+      </span>
+      <span class="cantidad-usuarios" *ngIf="cantidad === 1">
+        Existe 1 usuario en la base de datos
+      </span>
+      <span class="cantidad-usuarios" *ngIf="cantidad > 1">
+        Existen {{cantidad}} usuario en la base de datos
+      </span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding-vertical">
+    <ion-card class="ion-text-center">
+      <ion-card-title class="ion-text-center">
+        <ion-label>
+          <h1>Ingresa tus datos</h1>
+        </ion-label>
+      </ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Correo</ion-label>
+          <ion-input type="text" [(ngModel)]="correo"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Pregunta secreta</ion-label>
+          <ion-input type="text" [(ngModel)]="preguntaSecreta"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Respuesta secreta</ion-label>
+          <ion-input type="text" [(ngModel)]="respuestaSecreta"></ion-input>
+        </ion-item>
+      </ion-card-content>
+      <ion-button shape="block" (click)="registerNewUser()">Registrar</ion-button>
+      <ion-button shape="block" (click)="goToLogin()">Volver</ion-button>
+    </ion-card>
+  </div>
+</ion-content>

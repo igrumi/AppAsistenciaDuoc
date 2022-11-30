@@ -1,0 +1,30 @@
+
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  margin: auto;
+  width: 90%;
+}
+
+ion-button {
+  width: 100%;
+}
+
+.nombre {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+ion-content {
+  --background: url('../../../assets/img/duoc-pao2.jpg') no-repeat center/cover fixed;
+}
+
+ion-card{
+  width: 85%;
+  margin: 2em auto;
+}

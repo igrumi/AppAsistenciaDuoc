@@ -1,0 +1,34 @@
+.banner-img {
+    position: relative;
+    background-image: url('../../../assets/img/logo2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100px;
+}
+
+ion-content {
+    --background: url('../../../assets/img/duoc-pao3.jpg') no-repeat center/cover fixed;
+}
+
+ion-title{
+    background-color: #022859;
+    margin-top: -11.3em;
+    margin-bottom: -10em;
+    margin-left: -20px;
+    margin-right: -20px;
+    color: aliceblue;
+    font-family: cursive;
+}
+
+.h1{
+    font-size: 30px;
+}
+
+.btnpadding{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+

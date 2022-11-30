@@ -1,0 +1,38 @@
+<ion-title class="ion-padding-top ion-text-center">
+  <ion-label>
+    <div class="banner-img"></div>
+    <h1>Sistema de Asistencia</h1>
+  </ion-label>
+</ion-title>
+
+<ion-content>
+  <ion-content>
+    <ion-card>
+      <div id="titulo1">
+      <ion-card-subtitle>Ingresa tu respuesta</ion-card-subtitle>
+      </div>
+      <br>
+      <div id="titulo2">
+      <ion-card-subtitle>Paso 2: Responde la pregunta secreta</ion-card-subtitle>
+      </div>
+      <br>
+      <div id="usuario">
+      <p class="title">{{ nombre }}</p>
+      <br>
+      <p class="title">{{ pregunta }}</p>
+      </div>
+      <ion-input type="text" [(ngModel)]="respuesta" placeholder="Escribe aqui tu respuesta"></ion-input>
+      <br>
+      <br>
+      <div id="validar">
+      <ion-button shape="block" (click)="validarRespuestaSecreta()">Recuperar contraseña</ion-button>
+      </div>
+      <br>
+      <br>
+      <div style="padding-bottom: 10px;" id="iniciar">
+        <a href="">Iniciar Sesion</a>
+        </div>
+    </ion-card>
+
+  </ion-content>
+</ion-content>

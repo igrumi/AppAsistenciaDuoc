@@ -1,0 +1,75 @@
+
+ion-card-subtitle{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    width: max-content;
+}
+
+
+ion-input{
+    text-align: center;
+    font-size:larger;
+}
+#titulo1{
+    height: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+#titulo2{
+    height: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+ion-input{
+    text-align: center;
+    font-size:larger;
+}
+
+#iniciar{
+    text-align: center;
+}
+
+
+.banner-img {
+    position: relative;
+    background-image: url('../../../assets/img/logo2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100px;
+}
+
+.banner-img::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-bg);
+}
+
+ion-content {
+    --background: url('../../../assets/img/duoc-pao.jpg') no-repeat center/cover fixed;
+}
+
+ion-title{
+    background-color: #022859;
+    margin-top: -11.3em;
+    margin-bottom: -10em;
+    margin-left: -20px;
+    margin-right: -20px;
+    color: aliceblue;
+    font-family: cursive;
+}
+
+.h1{
+    font-size: 30px;
+}
+
+ion-card{
+    padding: 0 2em;
+}
