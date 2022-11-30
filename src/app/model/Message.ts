@@ -58,7 +58,7 @@ export async function showAlertDUOC(message: string): Promise<void> {
     return new Promise((resolve) => {
         if (message.trim() === '') resolve();
         let alert = new AlertController().create({
-            header: 'App Estoy Presente', message, 
+            header: 'Sistema de Asistencia', message, 
             buttons: [
                 { text: 'Aceptar', handler: () => resolve() }
             ]
@@ -70,7 +70,7 @@ export async function showAlertYesNoDUOC(message: string): Promise<MessageEnum> 
     return new Promise((resolve) => {
         if (message.trim() === '') resolve(MessageEnum.CANCEL);
         let alert = new AlertController().create({
-            header: 'App Estoy Presente', message, 
+            header: 'Sistema de Asistencia', message, 
             buttons: [
                 { text: 'Sí', handler: () => { resolve(MessageEnum.YES); } },
                 { text: 'No', handler: () => { resolve(MessageEnum.NO) } },
